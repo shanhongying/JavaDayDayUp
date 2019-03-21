@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration status="warn">
+    <appenders>
+        <Console name="Console" target="SYSTEM_OUT" follow="false">
+            <PatternLayout pattern="%5p:%d{yyyy-MM-dd HH:mm:ss.SSS}[%M] %m %n"/>
+            <!--<PatternLayout pattern="%highlight{[%p] %-d{yyyy-MM-dd HH:mm:ss} &ndash;&gt; %l%n[massage] %m%n}{FATAL=red, ERROR=red, WARN=yellow, INFO=cyan, DEBUG=cyan,TRACE=blue}"/>-->
+        </Console>
+    </appenders>
+    <loggers>
+        <root level="error">
+            <AppenderRef ref="Console"/>
+        </root>
+    </loggers>
+</configuration>
